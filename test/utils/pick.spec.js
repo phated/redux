@@ -1,5 +1,5 @@
 import expect from 'expect';
-import pick from '../../src/utils/pick';
+import pick from 'lodash/object/pick';
 
 describe('Utils', () => {
   describe('pick', () => {

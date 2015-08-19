@@ -1,5 +1,5 @@
 import expect from 'expect';
-import mapValues from '../../src/utils/mapValues';
+import mapValues from 'lodash/object/mapValues';
 
 describe('Utils', () => {
   describe('mapValues', () => {

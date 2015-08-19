@@ -1,4 +1,4 @@
-import mapValues from '../utils/mapValues';
+import mapValues from 'lodash/object/mapValues';
 
 export default function bindActionCreators(actionCreators, dispatch) {
   return mapValues(actionCreators, actionCreator =>

@@ -1,5 +1,5 @@
-import mapValues from '../utils/mapValues';
-import pick from '../utils/pick';
+import mapValues from 'lodash/object/mapValues';
+import pick from 'lodash/object/pick';
 
 export default function composeStores(stores) {
   const finalStores = pick(stores, (val) => typeof val === 'function');

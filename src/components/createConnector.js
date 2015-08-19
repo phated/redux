@@ -1,5 +1,5 @@
 import createReduxShape from '../utils/createReduxShape';
-import identity from '../utils/identity';
+import identity from 'lodash/utility/identity';
 import shallowEqual from '../utils/shallowEqual';
 import isPlainObject from '../utils/isPlainObject';
 import invariant from 'invariant';

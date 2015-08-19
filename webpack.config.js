@@ -3,6 +3,7 @@
 var webpack = require('webpack');
 
 var plugins = [
+  new webpack.NormalModuleReplacementPlugin(/lodash\/internal\/baseCallback/, 'bindCallback.js'),
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
   }),
@@ -43,6 +44,11 @@ module.exports = {
   },
   plugins: plugins,
   resolve: {
-    extensions: ['', '.js']
-  }
+    extensions: ['', '.js'],
+    alias: {
+      // 'lodash/internal/baseCallback': 'lodash/internal/asdljkaslkdj'
+      'lodash/object/pick': 'lodash/internal/pickByCallback'
+    }
+  },
+  bail: true
 };
